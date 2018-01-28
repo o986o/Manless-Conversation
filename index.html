@@ -1,82 +1,92 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
-  <title>Manless Conversation</title>
-  <link rel="icon" type="image/png" href="01.png">
-<link rel="stylesheet" href="style.css">
+    <title>交換日記</title>
+<style>
+table,th,td {
+    border: 1px solid blue; font-family: futura; font-weight: bold;
+}
+
+#myTABLE {
+    border-spacing: 2px;
+    -webkit-animation: mymove 10s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {border-spacing: 60px;}
+}
+
+#font1{
+  font-size: 5pt; font-weight: bold;
+}
+
+.wrap {
+    padding: 10px;
+}
+
+.d1 {
+    float: left;
+    width: 45%;
+    margin-right: 2%;
+    padding: 20px;
+
+
+}
+
+.d2 {
+    float: left;
+    width: 49%;
+    padding: 20px 0;
+    text-align: right;
+    font-family: futura;
+    font-weight:200;
+    font-size: 3px;
+}
+</style>
 </head>
-
 <body>
-  <div class="olia-cursor" id="style-8" style="position: absolute; margin: 5px; width: 650px; height: 250px; overflow: scroll;">
-    <div class="boxInner" style="height: 500px; width: 1210px; background: cyan;">
-      <video style="width: 290px;" autoplay muted loop><source src="sources/o01.mp4"></video>
-      <video style="width: 290px; left: 300px;" autoplay muted loop><source src="sources/o02.mp4"></video>
-      <video style="width: 290px; left: 600px;" autoplay muted loop><source src="sources/o03.mp4"></video>
-      <video style="width: 290px; left: 900px;" autoplay muted loop><source src="sources/o04.mp4"></video>
-    </div>
-  </div>
-
-  <div class="dohee-cursor" id="style-8" style="position: absolute; top: 255px; margin: 5px; width: 340px; height: 300px; overflow: scroll; transform:scaleX(-1);">
-    <div class="boxInner" style="height: 1320px; width: 340px; background: magenta;">
-      <video style="width: 305px; top: 20px;" autoplay muted loop><source src="sources/d01.mp4"></video>
-      <video style="width: 305px; top: 340px;" autoplay muted loop><source src="sources/d02.mp4"></video>
-      <video style="width: 305px; top: 680px;" autoplay muted loop><source src="sources/d03.mp4"></video>
-      <video style="width: 305px; top: 1020px;" autoplay muted loop><source src="sources/d04.mp4"></video>
-    </div>
-  </div>
-
-  <div class="img" id="style-8" style="position: absolute; margin: 5px; left: 655px; width: 400px; height: 250px; overflow: scroll; transform:scaleY(-1);">
-    <div class="boxInner" style="height: 850px; width: 1500px; transform:scaleY(-1); background: Lime;">
-      <img style="width: 1500px;" src="sources/img.png">
-    </div>
-  </div>
-
-  <div class="conversation" id="style-8" style="position: absolute; margin: 5px; top: 255px; left: 345px; width: 710px; height: 300px; overflow: scroll; overflow-x: hidden;">
-    <div class="boxInner" style="height: 1620px; width: 1000px; background: blue;">
-      <video style="top: 15px;" controls><source src="sources/01.mp4"></video>
-      <video style="top: 15px; left:345px;" controls><source src="sources/02.mp4"></video>
-      <video style="top: 300px;" controls><source src="sources/03.mp4"></video>
-      <video style="left:345px; top: 300px;" controls><source src="sources/04.mp4"></video>
-      <video style="top: 600px;" controls><source src="sources/05.mp4"></video>
-      <video style="left:345px; top: 600px;" controls><source src="sources/06.mp4"></video>
-      <video style="top: 900px;" controls><source src="sources/07.mp4"></video>
-      <video style="left:345px; top: 900px;" controls><source src="sources/08.mp4"></video>
-      <video style="top: 1200px;" controls><source src="sources/09.mp4"></video>
-      <video style="left:345px; top: 1200px;" controls><source src="sources/10.mp4"></video>
-      <video style="top: 1500px;" controls><source src="sources/11.mp4"></video>
-      <video style="left:345px; top: 1500px;" controls><source src="sources/12.mp4"></video>
-    </div>
-  </div>
-
-  <div class="chatting" id="style-8" style="position: absolute; margin: 5px; left: 1060px; width: 370px; height: 720px; overflow-y: scroll; overflow-x: hidden; transform:scaleX(-1);">
-    <div class="boxInner" style="height: 5000px; width: 370px; background: green;">
-      <video style="position: absolute; width: 340px; margin:10px;" autoplay muted loop>
-  <source src="sources/chatting.mp4">
-</video>
+<div class="wrap">
+  <div class="d1">
+<table id="myTABLE">
+  <tr>
+    <th><img src="KakaoTalk_Photo_2017-09-30-10-13-21_96.jpeg" style="width:100px; height:60px;" align="center"></th>
+    <th>15.24</th>
+  </tr>
+  <tr>
+    <td id="font1">ich möchte<br> zweihundert gram<br> grilled wurst.</td>
+    <td>200g</td>
+  </tr>
+  <tr>
+    <td><img src="KakaoTalk_Photo_2017-09-30-10-13-24_80.jpeg" style="width:100px; height:100px;" align="center"></td>
+    <td id="font1">30.<br>9.<br>17</td>
+  </tr>
+  <tr>
+    <td>아침 산책</td>
+    <td>-7</td>
+  </tr>
+</table>
 </div>
-  </div>
-
-  <div class="emotion" id="style-8" style="position: absolute; margin: 5px; top: 560px; width: 1055px; height: 160px; overflow: scroll; overflow-y: hidden; transform:scaleY(-1);">
-    <div class="boxInner" style="height: 160px; width: 2570px; background: black; transform:scaleY(-1);">
-      <video style="width:180px; left: 30px; top: 10px;" autoplay muted loop><source src="sources/e01.mp4"></video>
-      <video style="width:180px; left: 240px; top: 10px;" autoplay muted loop><source src="sources/e02.mp4"></video>
-      <video style="width:180px; left: 450px; top: 10px;" autoplay muted loop><source src="sources/e03.mp4"></video>
-      <video style="width:180px; left: 660px; top: 10px;" autoplay muted loop><source src="sources/e04.mp4"></video>
-      <video style="width:180px; left: 870px; top: 10px;" autoplay muted loop><source src="sources/e05.mp4"></video>
-      <video style="width:180px; left: 1080px; top: 10px;" autoplay muted loop><source src="sources/e06.mp4"></video>
-      <video style="width:180px; left: 1290px; top: 10px;" autoplay muted loop><source src="sources/e01.mp4"></video>
-      <video style="width:180px; left: 1500px; top: 10px;" autoplay muted loop><source src="sources/e02.mp4"></video>
-      <video style="width:180px; left: 1710px; top: 10px;" autoplay muted loop><source src="sources/e03.mp4"></video>
-      <video style="width:180px; left: 1920px; top: 10px;" autoplay muted loop><source src="sources/e04.mp4"></video>
-      <video style="width:180px; left: 2130px; top: 10px;" autoplay muted loop><source src="sources/e05.mp4"></video>
-      <video style="width:180px; left: 2340px; top: 10px;" autoplay muted loop><source src="sources/e06.mp4"></video>
-
-    </div>
-  </div>
-
-
+<div class="d2">
+<pre>
+만약 너가 이것을 누른다면
+만약 이것을 너가 누른다면
+이것을 만약 너가 누른다면
+  +
+  +
+  +
+  +
+  +
+  +
+  +
+</pre>
+<img src="KakaoTalk_Photo_2017-09-30-10-13-21_96.jpeg" alt="장" style="widht:50px; height:50px;" align="right" usemap="#planetmap">
+<map name="planetmap">
+  <area shape="rect" coords="0,0,200,800" alt="Sun" href="rainbow.jpg" >
+</map>
+</div>
+</div>
 </body>
-
 </html>
